@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bad Bunny 🐰</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital@1&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.035) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      animation: fadeUp 1.8s cubic-bezier(0.16,1,0.3,1) forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .eyebrow {
+      font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+      font-size: clamp(0.7rem, 1.8vw, 0.95rem);
+      letter-spacing: 0.5em;
+      color: rgba(255,255,255,0.2);
+      text-transform: uppercase;
+      margin-bottom: 1.8rem;
+      animation: fadeUp 1.8s 0.25s cubic-bezier(0.16,1,0.3,1) forwards;
+      opacity: 0;
+    }
+
+    .main-text {
+      font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+      font-size: clamp(2.6rem, 10vw, 7rem);
+      color: #fff;
+      line-height: 1.0;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      animation: fadeUp 1.8s 0.5s cubic-bezier(0.16,1,0.3,1) forwards;
+      opacity: 0;
+    }
+
+    .main-text span {
+      display: block;
+    }
+
+    .accent-line {
+      width: 0;
+      height: 1px;
+      background: rgba(255,255,255,0.15);
+      margin: 2rem auto;
+      animation: expandLine 1.2s 1.2s ease forwards;
+    }
+    @keyframes expandLine {
+      to { width: 60px; }
+    }
+
+    .sub {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2.8vw, 1.5rem);
+      color: rgba(255,255,255,0.28);
+      letter-spacing: 0.06em;
+      animation: fadeUp 1.8s 1s cubic-bezier(0.16,1,0.3,1) forwards;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="eyebrow">uma surpresa especial ✦</p>
+    <h1 class="main-text">
+      <span>Tinhas ração</span>
+      <span>docinha,</span>
+      <span>vamos ver</span>
+      <span>Bad Bunny</span>
+    </h1>
+    <div class="accent-line"></div>
+    <p class="sub">juntos 🐰</p>
+  </div>
+</body>
+</html>
